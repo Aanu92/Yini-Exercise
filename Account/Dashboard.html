@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Yinks 🔗 -->
+    <link rel="stylesheet" href="../Index.css">
+    <link rel="shortcut icon" href="../Images/Yini Exercise Favicon.png" type="image/x-icon">
+    <link rel='stylesheet'href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account - Yini Exercise</title>
+</head>
+
+<body>
+    <header class="Yini_Header">
+
+        <h2>Yini Exercise</h2>
+
+        <nav>
+            <ul>
+                <li><i class="fi fi-rr-info"></i> About</li>
+                <li><i class="fi fi-rr-volleyball"></i> Teams</li>
+                <li><i class="fi fi-rr-gym"></i> Exercise</li>
+                <li><i class="fi fi-rr-envelope"></i> Contact</li>
+            </ul>
+        </nav>
+
+        <div class="Account">
+            <button class="Outline_Button">Sign In</button>
+            <button class="Gradient_Button">Sign Up</button>
+        </div>
+
+        <div class="Buttons">
+          <button class="Outline_Button" onclick="ToggleTheme()"><i class="fi fi-rr-brightness"></i></button>
+          <button class="Inline_Button" id="SideButton"><i class="fi fi-rr-menu-burger"></i></button>
+        </div>
+
+    </header>
+
+    <div class="Account_Dashboard">
+        <div class="Intro">
+            <div>
+              <h1>Hi, <span class="YiniName Yini_Text"></span></h1><br>
+              <p>What would you do today?</p>
+            </div>
+
+            <img src="../Images/Yini Exercise Favicon.png">
+        </div>
+          
+        <div class="Yini_Box">
+            <h2>Continue on...</h2>
+
+            <div class="Box">
+                  <span class="Bold">Exercise 101</span><br>
+                  <p>The basics of it.</p><br>
+                  
+                  <button class="Outline_Button"
+                  style="align-self: flex-end;">Continue <i class="fi fi-rr-angle-small-right"></i></button>
+            </div>
+        </div>
+
+        <div class="Box">
+            <h2>Exercise</h2><br>
+
+            <div class="Exercise_Meter"></div>
+        </div>
+    </div>
+
+
+    <script src="../Index.js"></script>
+    <script src="./Connections/Account.js"></script>
+</body>
+
+</html>

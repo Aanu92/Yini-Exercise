@@ -1,0 +1,327 @@
+/* Creating Font... 🅰️ */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+/* To element, or not to element */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    /* min-height: 100dvh; */
+    background: var(--White);
+}
+
+a {
+    color: var(--Yini-Green);
+}
+
+.Yini_Text {
+    color: transparent;
+    background: linear-gradient(var(--Yini-Green), var(--Yini-Sky));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.Gray {
+    color: #ccc;
+}
+
+.Yini_Border {
+    border-image: linear-gradient(var(--Yini-Green), var(--Yini-Sky)) 1;
+}
+
+
+/* Colours, take your places! 🎨 */
+:root {
+    --Black: hsl(0, 0%, 20%);
+    --White: hsl(0, 0%, 100%);
+    --Light: hsl(0, 0%, 93%);
+    --Yini-Sky: #85fbff;
+    --Yini-Green: #5bffd3;
+}
+
+:root.Dark-Mode {
+    --Black: #fff;
+    --White: #222;
+    --Light: #333;
+    --Yini-Sky: #85fbff;
+    --Yini-Green: #5bffd3;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --Black: #fff;
+        --White: #222;
+        --Light: #333;
+        --Yini-Sky: #85fbff;
+        --Yini-Green: #5bffd3;
+    }
+}
+
+/* Margins! */
+:root {
+    --Yini-Margin-XXXXS: 4px;
+    --Yini-Margin-XXXS: 8px;
+    --Yini-Margin-XXS: 12px;
+    --Yini-Margin-XS: 16px;
+    --Yini-Margin-S: 20px;
+    --Yini-Margin-M: 28px;
+    --Yini-Margin-L: 40px;
+    --Yini-Margin-XL: 60px;
+    --Yini-Margin-XXL: 100px;
+    --Yini-Margin-XXL: 160px;
+    --Yini-Margin-XXXL: 240px;
+}
+
+/* Borders */
+:root {
+    --Yini-Light-Border: 2px solid var(--Light)
+}
+
+
+
+/* And... the buttons! 🔲 */
+.Inline_Button {
+    color: #fff;
+    border: none;
+    padding: 18px;
+    border-radius: 4px;
+    background: var(--Yini-Green);
+}
+
+.Outline_Button {
+    padding: 18px;
+    background: none;
+    border-radius: 4px;
+    color: var(--Black);
+    border: 2px solid var(--Yini-Green);
+}
+
+
+.Gradient_Button {
+    color: #fff;
+    border: none;
+    padding: 18px;
+    border-radius: 4px;
+    background: linear-gradient(150deg, var(--Yini-Green), var(--Yini-Sky));
+}
+
+.Outline_Gradient_Button {
+    padding: 18px;
+    background: none;
+    border-radius: 4px;
+    color: var(--Black);
+    border-image: linear-gradient(var(--Yini-Green), var(--Yini-Sky)) 1;
+}
+
+
+
+
+
+.Yini_Header {
+    gap: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 25px;
+    color: var(--Black);
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background: var(--White);
+    border-bottom: var(--Yini-Light-Border);
+}
+
+
+.Yini_Header nav ul {
+    gap: 42px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Yini_Header nav ul li {
+    list-style-type: none;
+}
+
+.Yini_Header nav ul li a {
+    color: var(--Black);
+    text-decoration: none;
+}
+
+.Yini_Header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.Yini_Header .Buttons {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Yini_Header #SideButton {
+    display: none;
+}
+
+
+
+.Yini_Footer {
+    gap: 20px;
+    display: flex;
+    color: var(--Black);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: -999;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--White);
+    border-top: var(--Yini-Light-Border);
+}
+
+.Yini_Footer h2 {
+    gap: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Yini_Footer h2 img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.Account_Form {
+    gap: 50px;
+    display: flex;
+    padding: 45px;
+    margin-top: 200px;
+    align-items: center;
+    width: max-content;
+    flex-direction: column;
+    border: var(--Yini-Light-Border);
+}
+
+
+
+
+.Account_Dashboard {
+    padding: 55px;
+    color: var(--Black);
+    margin: var(--Yini-Margin-M);
+    margin-top: var(--Yini-Margin-XXL);
+}
+
+.Account_Dashboard .Intro {
+    gap: 15px;
+    display: flex;
+    margin-bottom: 120px;
+    flex-direction: row;
+}
+
+.Account_Dashboard .Intro h1 {
+    font-size: 45px;
+}
+
+.Account_Dashboard .Intro p {
+    font-size: 21px;
+}
+
+.Account_Dashboard .Intro img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: calc(100% - 90%);
+    transform: rotate(15deg);
+}
+
+
+.Account_Dashboard .Box {
+    margin: 20px;
+    padding: 45px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: var(--Yini-Light-Border);
+}
+
+.Account_Dashboard .Yini_Box {
+    gap: 20px;
+    margin: 20px;
+    padding: 45px;
+    border-radius: 10px;
+    border: 2px solid var(--Yini-Green);
+}
+
+.Account_Dashboard .Yini_Box div, .Account_Dashboard .Box div {
+    flex-direction: column;
+}
+
+.Account_Dashboard .Bold {
+    font-weight: bold;
+}
+
+.Account_Dashboard .Exercise_Meter {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: var(--Yini-Light-Border);
+}
+
+
+
+
+
+
+/* Media ?s */
+
+@media (max-width: 1630px) {
+    .Yini_Header {
+        gap: 200px;
+    }
+}
+@media (max-width: 1444px) {
+    .Yini_Header {
+        gap: 100px;
+    }
+}
+@media (max-width: 1144px) {
+    .Yini_Header nav, .Yini_Header .Account {
+        display: none;
+    }
+    .Yini_Header #SideButton {
+        display: block;
+    }
+}
+@media (max-width: 414px) {
+    .Yini_Header h2 {
+        display: none;
+    }
+}
+@media (max-width: 616px) {
+    .Account_Dashboard .Intro {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .Account_Dashboard .Intro img {
+        display: none;
+    }
+}
+@media (max-width: 662px) {
+    .Account_Dashboard .Box {
+        flex-direction: column;
+    }
+}
+@media (max-width: 548px) {
+    .Account_Dashboard .Box, .Account_Dashboard .Yini_Box {
+        padding: 25px;
+    }
+}
